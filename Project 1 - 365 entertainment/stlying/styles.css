@@ -1,0 +1,237 @@
+/*--------------------- Variables--------------------- */
+body{
+    --maincolor: rgb(197, 197, 74);
+    color: white;
+    background-color: black;
+}
+
+/*-------------- -------Styling----------------------- */
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*------------------ Navbar elements -------------------*/
+
+.navbar{
+    background-color: var(--maincolor);
+    height: 15%;
+    width: 100%;
+    padding: 2vh;
+}
+.logo{
+    width: 10vh;
+    height: auto;
+    border-radius: 10%;
+    margin: 1vh;
+}
+
+.navbarButton{
+    text-decoration: none;
+    margin: 2vh 1vh 2vh 1vh;
+    color: black;
+    text-align: center;
+    min-width: 10vw;
+}
+
+.flexContainer{
+    display:flex;
+    align-items: center;
+    justify-content: left;
+}
+
+/* --------------------------footer----------------------- */
+
+
+.footerContainer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--maincolor);
+    width: 100%;
+    height: 10%;
+    margin-bottom: 10vh;
+    
+}
+
+span{
+    color: black;
+}
+
+
+/* -------------------Movies by genre----------------------- */
+
+.mediabox{
+    
+    width: 200px;
+    height: 200px;
+    margin: 10px 5px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.5);
+    /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    text-align: center;
+  }
+
+  .mediacontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid white;
+  }
+
+  .showgenres{
+      margin: 3% 5% 3% 5%;
+  }
+
+  .showgenres h2 {
+      margin-bottom: 0%;
+  }
+
+  /* ------------------carousel------------------- */
+
+  .carouselcontainer{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    position: relative
+  }
+  
+  .carouselslide{
+    display: flex;
+    width: 100%;
+
+  }
+
+  #prevbutton{
+      position: absolute;
+      top: 50%;
+      z-index: 10;
+      left: 5%;
+      font-size: 30px;
+      color:black;
+      opacity: 0.5;
+      cursor: pointer;
+
+  }
+
+  #nextbutton{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 5%;
+    font-size: 30px;
+    color:black;
+    opacity: 0.5;
+    cursor: pointer;
+
+}
+
+/* ---------------genre and search------------- */
+
+.genresearch{
+    display: flex;
+    justify-content: center;
+
+    margin: 1%;
+}
+
+input{
+    background-color: var(--maincolor);
+    border-color: black;
+    margin-left: 1%;
+}
+
+.genreselect{
+    width: auto;
+}
+
+.searchbox{
+    width: 90%;
+    display: flex;
+}
+
+#searchbar{
+    width: 100%;
+    
+}
+
+  
+  ul {
+    background: var(--maincolor);
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
+      z-index: 10;
+  }
+  
+  li {
+      color: black;
+    background: var(--maincolor);
+      display: block;
+      float: left;
+      padding: 1rem;
+      position: relative;
+      text-decoration: none;
+    transition-duration: 0.5s;
+  }
+    
+  li a {
+    color: black;
+  }
+  
+  li:hover {
+      background: orange;
+      cursor: pointer;
+  }
+  
+  ul li ul {
+      
+      visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+      position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+      left: 0;
+    display: none;
+  }
+  
+  ul li:hover > ul,
+  ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+  
+  ul li ul li {
+      clear: both;
+    width: 100%;
+  }
+
+.allmovies{
+    margin: 3%;
+}
